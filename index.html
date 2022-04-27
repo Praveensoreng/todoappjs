@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>     
+    <div class="container" id="blur">
+        <div class="heading-container">
+            <div class="heading">
+                <span id="task">Task</span>
+                <span id="list">List</span>
+            </div>
+            <div class="add-item">
+                <span data-modal-target="#modal" id="plus-btn" >
+                    <i class="fa-solid fa-circle-plus"></i>
+                </span>
+                <span id="add-item">Add Item</span>
+            </div>
+        </div>
+        <div class="sub-heading-container">
+            No Items in the Todo List
+        </div>
+        <div id="card-container">
+            
+        </div>
+    </div> 
+        <!-- popup-window1 -->
+          <div class="popup" id="modal">
+            <div class="add-new-list">
+                Add New List
+            </div>
+                <label for="name"></label>
+                <input type="text" name="name" placeholder="Enter To do item" id="name">
+        
+            <div class="add-close-btn">
+                <button class="btn" onclick="addNew()">Add</button>
+                <button data-close-button class="close-button">Close</button>
+            </div>
+        </div>
+
+        <!-- poppu-window2  -->
+
+        <div class="popup2" id="modal1">
+            <div class="add-new-list2">
+                Add New Task
+            </div>
+                <label for="name2"></label>
+                <input type="text" name="name" placeholder="Enter new task" id="name2">
+        
+            <div class="add-close-btn2">
+            <button id="btn2" onclick="addNew2()">
+                    Add
+            </button>
+            <button data-close-button1 id="close-button2">
+                    Close
+            </button>
+            </div>
+        </div> 
+<script src="./index.js"></script>
+</body>
+</html>
